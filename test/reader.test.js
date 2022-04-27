@@ -7,7 +7,7 @@ describe("pruebas para reader.js", () => {
     test('Case1: lectura de archivos', () => {
         // codigo que se desea proba
         const fileReader = reader.readFile("explorers.json")
-        console.log(fileReader)
+            //console.log(fileReader)
 
         // Resultado que se espera de las pruebas Ajolonauta1
         expect(fileReader[0].name).toBe("Woopa1");
