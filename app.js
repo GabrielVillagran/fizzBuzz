@@ -8,12 +8,12 @@ const explorers = JSON.parse(rawdata); //print the data that is on rawdata
 
 // Part 2: Get the quantity of explorers names in node
 const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
-console.log(explorersInNode.length) //quantity of explorers that are in node mission
+//console.log(explorersInNode.length) //quantity of explorers that are in node mission
 
 // Part4: Get the explorer's usernames in Node
 const explorersInNodeToGetUsernames = explorers.filter((explorer) => explorer.mission == "node");
 const usernamesInNode = explorersInNodeToGetUsernames.map((explorer) => explorer.githubUsername);
-//console.log(usernamesInNode) //explorer that are in node mission
+console.log(usernamesInNode) //explorer that are in node mission
 
 // DEAD CODE: Part 5,6,7, please remove this and go to Part 8!
 
