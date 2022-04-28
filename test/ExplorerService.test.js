@@ -10,7 +10,7 @@ describe("pruebas para ExplorerServices.js", () => {
         const explorers = reader.readFile("explorers.json")
 
         // Resultado que se espera de las pruebas Ajolonauta1
-        expect(explorersService.filterByMission(explorers, "node")).toBe(10);
+        expect(explorersService.filterByMission(explorers, "node").length).toBe(10);
     });
     // Prueba de caso 2
     test('Case2: filterByMission java', () => {
@@ -18,6 +18,6 @@ describe("pruebas para ExplorerServices.js", () => {
         const explorers = reader.readFile("explorers.json")
 
         // Resultado que se espera de las pruebas Ajolonauta1
-        expect(explorersService.filterByMission(explorers, "java")).toBe(5);
+        expect(explorersService.getAmountOfExplorersByMission(explorers, "java")).toBe(5);
     });
 })
